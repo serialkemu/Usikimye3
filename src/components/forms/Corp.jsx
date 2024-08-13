@@ -1,4 +1,6 @@
 import React from 'react'
+import { Container, Form, Button, ProgressBar } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Corp = () => {
   return (
