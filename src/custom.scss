@@ -1,0 +1,21 @@
+// custom.scss
+
+// Import Bootstrap's SCSS
+@import "~bootstrap/scss/bootstrap";
+
+// Override Bootstrap variables
+$primary: #007BFF;       // Soft Blue
+$secondary: #28A745;     // Light Green
+$success: #28A745;       // Green (for success state)
+$info: #17A2B8;          // Info color (can be used as needed)
+$warning: #FFC107;       // Warning color (can be used as needed)
+$danger: #DC3545;        // Red (for errors)
+$light: #F8F9FA;         // Light Gray
+$dark: #343A40;          // Dark Gray
+
+// Optional: Override additional colors as needed
+$body-bg: $light;        // Background color
+$text-color: $dark;      // Text color
+
+// Import additional custom styles if needed
+// @import 'path/to/your/custom/styles';
