@@ -18,7 +18,7 @@ const PeerToPeerForm = () => {
         <Form.Label>Description</Form.Label>
         <Form.Control as="textarea" rows={3} placeholder="Provide a brief description" />
       </Form.Group>
-      <Button variant="primary" type="submit">Submit</Button>
+      <Button variant="primary" type="submit" className='m-3'>Submit</Button>
     </Form>
   );
 };

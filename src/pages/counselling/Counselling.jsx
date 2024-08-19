@@ -1,8 +1,8 @@
 // src/pages/counselling/Counselling.jsx
-import React, { useState } from 'react';
-import { Form, Button, ListGroup } from 'react-bootstrap';
+import React from 'react';
+import { Link } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
-import Messaging from './Messaging';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Coun = ({ counicon, counmes, countitle, counlink }) => {
   return (
@@ -15,6 +15,7 @@ const Coun = ({ counicon, counmes, countitle, counlink }) => {
           <div className="card-body">
             <h5 className="card-title">{countitle}</h5>
             <p className="card-text">{counmes}</p>
+            <Link to={counlink} className="btn btn-primary">Start</Link>
           </div>
         </div>
       </div>
@@ -25,9 +26,24 @@ const Coun = ({ counicon, counmes, countitle, counlink }) => {
 const Counselling = () => {
   return (
     <div className="counselling-container">
-      <Coun counicon={''} counlink={''} counmes={'Peer-to-Peer Counselling'}/>
-      <Coun counicon={''} counlink={''} counmes={'Group Therapy'}/>
-      <Coun counicon={''} counlink={''} counmes={'Trained Therapist Sessions'}/>
+      <Coun 
+        counicon={''} 
+        countitle="Peer-to-Peer Counselling" 
+        counmes="Participate in peer-to-peer counselling" 
+        counlink="/peer-to-peer" 
+      />
+      <Coun 
+        counicon={''} 
+        countitle="Group Therapy" 
+        counmes="Join a group therapy session" 
+        counlink="/group-therapy" 
+      />
+      <Coun 
+        counicon={''} 
+        countitle="Trained Therapist Sessions" 
+        counmes="Schedule a session with a trained therapist" 
+        counlink="/therapist" 
+      />
     </div>
   );
 };

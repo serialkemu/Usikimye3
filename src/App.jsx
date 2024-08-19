@@ -13,48 +13,33 @@ import Corp from './components/forms/Corp';
 import Edu from './pages/education/Edu';
 import Stat from './pages/stat/Stat';
 import Counselling from './pages/counselling/Counselling';
+import PeerToPeerForm from './pages/counselling/PeerToPeerForm';
+import GroupTherapyForm from './pages/counselling/GroupTherapyForm';
+import TherapistForm from './pages/counselling/TherapistForm';
 import About from './pages/about/About';
-
-const PrivateRoute = ({ component: Component, roles, ...rest }) => {
-  const currentUser = JSON.parse(localStorage.getItem('user'));
-  return (
-    <Route
-      {...rest}
-      render={(props) => {
-        if (!currentUser) {
-          return <Redirect to="/login" />;
-        }
-        if (roles && !roles.includes(currentUser.role)) {
-          return <Redirect to={{ pathname: '/', state: { from: props.location } }} />;
-        }
-        return <Component {...props} />;
-      }}
-    />
-  );
-};
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './styles/custom.scss';
 
 function App() {
   return (
-          <Router>
-             <CustomNavbar />
+    <Router>
+      <CustomNavbar />
       <Routes>
-    
         <Route path="/" element={<Home />} />
         <Route path="/report" element={<Report />} />
         <Route path="/victim" element={<Victim />} />
         <Route path="/corp" element={<Corp />} />
         <Route path="/witness" element={<Witness />} />
         <Route path="/counselling" element={<Counselling />} />
+        <Route path="/peer-to-peer" element={<PeerToPeerForm />} />
+        <Route path="/group-therapy" element={<GroupTherapyForm />} />
+        <Route path="/therapist" element={<TherapistForm />} />
         <Route path="/edu" element={<Edu />} />
         <Route path="/stat" element={<Stat />} />
         <Route path="/about" element={<About />} />
-        
-        
       </Routes>
-      <Footer/>
+      <Footer />
     </Router>
-   
-
   );
 }
 

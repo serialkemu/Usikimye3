@@ -1,0 +1,59 @@
+/* src/styles/custom.css */
+
+/* Primary Color */
+.btn-primary,
+.bg-primary,
+.border-primary {
+  background-color: #007BFF !important;
+  border-color: #007BFF !important;
+}
+
+.text-primary {
+  color: #007BFF !important;
+}
+
+/* Secondary Color */
+.btn-secondary,
+.bg-secondary,
+.border-secondary {
+  background-color: #28A745 !important;
+  border-color: #28A745 !important;
+}
+
+.text-secondary {
+  color: #28A745 !important;
+}
+
+/* Accent Color */
+.text-accent {
+  color: #6F42C1 !important;
+}
+
+/* Background Color */
+body {
+  background-color: #F8F9FA !important;
+}
+
+/* Text Color */
+body,
+.text-body {
+  color: #343A40 !important;
+}
+
+/* Error Color */
+.text-danger,
+.bg-danger,
+.border-danger {
+  color: #DC3545 !important;
+  background-color: #DC3545 !important;
+  border-color: #DC3545 !important;
+}
+
+/* Success Color */
+.text-success,
+.bg-success,
+.border-success {
+  color: #28A745 !important;
+  background-color: #28A745 !important;
+  border-color: #28A745 !important;
+}

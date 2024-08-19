@@ -1,0 +1,25 @@
+// Import Bootstrap's variables first
+//@import '~bootstrap/scss/functions';
+//@import '~bootstrap/scss/variables';
+
+// Override Bootstrap variables
+$primary: #6dafb8;      
+$secondary: #28A745;    
+$success: #28A745;      
+$info: #17A2B8;         
+$warning: #FFC107;      
+$danger: #DC3545;       
+$light: #F8F9FA;        
+$dark: #343A40;         
+
+
+    
+
+
+body {
+//   background-color: $body-bg;
+  color: $primary;
+}
+
+@import '/node_modules/bootstrap';
+@import '/home/kimunto/Documents/Baby/Demo/Usikimye3/node_modules/bootstrap/scss/_variables.scss';
