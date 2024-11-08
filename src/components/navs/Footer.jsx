@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Footer = () => {
   return (
-    <div>
+    <div >
         <footer className="bg-primary text-white text-center py-3">
         <Container>
           <p>&copy; 2024 SGBV Reporting App. All rights reserved.</p>

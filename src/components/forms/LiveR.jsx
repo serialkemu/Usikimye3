@@ -2,7 +2,7 @@ import React from 'react'
 import { useReactMediaRecorder } from "react-media-recorder";
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 
-const Live = () => {
+const LiveR = () => {
 
     const {
         status,
@@ -31,4 +31,4 @@ const Live = () => {
   )
 }
 
-export default Live
+export default LiveR

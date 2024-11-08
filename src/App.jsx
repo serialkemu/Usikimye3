@@ -9,6 +9,7 @@ import Home from './pages/home/Home';
 import Report from './pages/report/Report';
 import Victim from './components/forms/Victim';
 import Witness from './components/forms/Witness';
+import LiveR from './components/forms/LiveR';
 import Corp from './components/forms/Corp';
 import Edu from './pages/education/Edu';
 import Stat from './pages/stat/Stat';
@@ -19,6 +20,11 @@ import TherapistForm from './pages/counselling/TherapistForm';
 import About from './pages/about/About';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/custom.scss';
+
+
+
+
+
 
 function App() {
   return (
@@ -37,6 +43,10 @@ function App() {
         <Route path="/edu" element={<Edu />} />
         <Route path="/stat" element={<Stat />} />
         <Route path="/about" element={<About />} />
+        <Route path="/corp" element={<Corp/>} />
+        <Route path="/Witness" element={<Witness />} />
+        <Route path="/Victim" element={< Victim/>} />
+        <Route path="/LiveR" element={< LiveR/>} />
       </Routes>
       <Footer />
     </Router>
