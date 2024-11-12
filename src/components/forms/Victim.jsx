@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { Container, Form, Button, ProgressBar } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Mediapick from './Mediapick';
 
 const Victim = () => {
   const [step, setStep] = useState(1);
@@ -66,6 +67,9 @@ const Victim = () => {
               <Form.Label>Were there any witnesses?</Form.Label>
               <Form.Control type="text" placeholder="Enter the names of witnesses" />
             </Form.Group>
+            <Form.Group>
+              <Mediapick/>
+            </Form.Group>
             <Button variant="secondary" onClick={previousStep} className="mt-3">Back</Button>
             <Button variant="primary" onClick={nextStep} className="mt-3 ml-3">Next</Button>
           </>
@@ -124,6 +128,7 @@ const Victim = () => {
               <Form.Label>Additional Considerations</Form.Label>
               <Form.Control as="textarea" rows={3} placeholder="Document everything: Date and time of the interview, names of the people involved, and any other relevant information." />
             </Form.Group>
+            
             <Button variant="secondary" onClick={previousStep} className="mt-3">Back</Button>
             <Button variant="primary" type="submit" className="mt-3 ml-3">Submit</Button>
           </>

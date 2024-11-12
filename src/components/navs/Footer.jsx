@@ -12,6 +12,7 @@ const Footer = () => {
             <Nav.Link href="#about" className="text-white">About</Nav.Link>
             <Nav.Link href="#contact" className="text-white">Contact</Nav.Link>
             <Nav.Link href="#help" className="text-white">Help</Nav.Link>
+            <Nav.Link href='admin' >Admin</Nav.Link>
           </Nav>
         </Container>
       </footer>

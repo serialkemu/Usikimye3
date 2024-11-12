@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { Container, Form, Button, ProgressBar } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Mediapick from './Mediapick';
 
 const Witness = () => {
   const [step, setStep] = useState(1);
@@ -35,6 +36,9 @@ const Witness = () => {
             <Form.Group controlId="witnessContact">
               <Form.Label>Contact Information (if you consent to provide it)</Form.Label>
               <Form.Control type="text" placeholder="Enter your contact information" />
+            </Form.Group>
+            <Form.Group>
+              <Mediapick/>
             </Form.Group>
             <Button variant="primary" onClick={nextStep} className="mt-3">Next</Button>
           </>

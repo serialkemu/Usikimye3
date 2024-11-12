@@ -30,6 +30,9 @@ const ReportCa = () => {
         <div className='col-12'>
           <Reportz repoicon={victim} repotitle="Report Live Incident" repomes="Fill out the live form" rlink="/liveR" />
         </div>
+        <div className='col-12'>
+          <Reportz repoicon={witness} repotitle="Track Me" repomes="Fill out the live form" rlink="/trackme" />
+        </div>
         <div className='col-md-6'>
           <Reportz repoicon={witness} repotitle="Victim Form" repomes="Fill out the victim form" rlink="/victim" />
         </div>

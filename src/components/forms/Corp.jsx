@@ -1,6 +1,7 @@
 import React from 'react'
 import { Container, Form, Button, ProgressBar } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Mediapick from './Mediapick';
 
 const Corp = () => {
   return (
@@ -19,6 +20,10 @@ const Corp = () => {
         <Form.Label>Description of Request</Form.Label>
         <Form.Control as="textarea" rows={3} />
       </Form.Group>
+      <Form.Group>
+        <Mediapick/>
+      </Form.Group>
+
       <Button variant="primary" type="submit" className="mt-3">Submit</Button>
     </Form>
     </div>

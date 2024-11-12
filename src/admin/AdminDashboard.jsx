@@ -58,7 +58,7 @@ const AdminDashboard = () => {
             >
               <option value="admin">Admin</option>
               <option value="therapist">Therapist</option>
-              <option value="org/lawyer">Org/Lawyer</option>
+              <option value1782081143="org/lawyer">Org/Lawyer</option>
             </Form.Control>
           </Col>
           <Col>

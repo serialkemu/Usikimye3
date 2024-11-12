@@ -34,6 +34,7 @@ const NavB = () => {
             <Nav.Link as={Link} to="/edu" onClick={() => setExpanded(false)}>Education</Nav.Link>
             <Nav.Link as={Link} to="/stat" onClick={() => setExpanded(false)}>Hot-Maps</Nav.Link>
             <Nav.Link as={Link} to="/about" onClick={() => setExpanded(false)}>About</Nav.Link>
+            <Nav.Link as={Link} to="/admin" onClick={() => setExpanded(false)}>Admin</Nav.Link>
           </Nav>
         </BootstrapNavbar.Collapse>
       </Container>
